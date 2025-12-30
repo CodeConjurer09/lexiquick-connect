@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { UserPlus, CreditCard, Monitor, DollarSign, Wallet, ArrowRight } from 'lucide-react';
 
 const HowItWorks = () => {
