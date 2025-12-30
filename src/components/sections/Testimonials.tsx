@@ -8,19 +8,19 @@ const Testimonials: React.FC = () => {
     {
       name: "James Ochieng",
       location: "Nairobi, Kenya",
-      text: "Helalink has transformed my online income. The affiliate program alone has helped me earn consistently every month.",
+      text: "LexiQuick has transformed my online income. The Video review program alone has helped me earn consistently every month.",
       rating: 5
     },
     {
       name: "Aisha Nakato",
       location: "Kampala, Uganda",
-      text: "I started with the welcome bonus and now I'm earning from multiple streams. The platform is reliable and payments are fast.",
+      text: "I started with the apps reviewing and now I'm earning from multiple streams. The platform is reliable and payments are fast.",
       rating: 5
     },
     {
       name: "Samuel Mensah",
       location: "Accra, Ghana",
-      text: "The trivia quizzes are fun and rewarding. I've earned more than I expected just by testing my knowledge.",
+      text: "The movies are fun and rewarding. I've earned more than I expected just by watching my favourite movies.",
       rating: 5
     }
   ];

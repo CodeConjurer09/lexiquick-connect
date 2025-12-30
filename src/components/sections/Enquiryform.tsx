@@ -62,7 +62,7 @@ const EnquiryForm: React.FC = () => {
         {/* Form Card */}
         <div className="bg-white rounded-3xl p-8 shadow-xl border border-neutral-200">
           {submitSuccess && (
-            <div className="mb-6 p-4 bg-primary-50 border border-primary-200 rounded-xl text-primary-700">
+            <div className="mb-6 p-4 bg-secondary-100 border border-primary-200 rounded-xl text-primary-700">
               Thank you! We'll get back to you soon.
             </div>
           )}
@@ -71,7 +71,7 @@ const EnquiryForm: React.FC = () => {
             {/* Name */}
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-secondary-700 mb-2">
-                Full Name *
+                Full Name 
               </label>
               <input
                 type="text"
@@ -81,14 +81,14 @@ const EnquiryForm: React.FC = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="John Doe"
+                placeholder="Enter your name"
               />
             </div>
 
             {/* Email */}
             <div>
               <label htmlFor="email" className="block text-sm font-semibold text-secondary-700 mb-2">
-                Email Address *
+                Email Address 
               </label>
               <input
                 type="email"
@@ -98,14 +98,14 @@ const EnquiryForm: React.FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="john@example.com"
+                placeholder="Enter your email"
               />
             </div>
 
             {/* Phone */}
             <div>
               <label htmlFor="phone" className="block text-sm font-semibold text-secondary-700 mb-2">
-                Phone Number *
+                Phone Number 
               </label>
               <input
                 type="tel"
@@ -115,37 +115,14 @@ const EnquiryForm: React.FC = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="+254 700 000000"
+                placeholder="+254700000000"
               />
-            </div>
-
-            {/* Interest */}
-            <div>
-              <label htmlFor="interest" className="block text-sm font-semibold text-secondary-700 mb-2">
-                Primary Interest *
-              </label>
-              <select
-                id="interest"
-                name="interest"
-                required
-                value={formData.interest}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-              >
-                <option value="">Select an option</option>
-                <option value="affiliate">Affiliate Marketing</option>
-                <option value="videos">Watch & Earn</option>
-                <option value="trivia">Trivia Quizzes</option>
-                <option value="spin">Spin & Win</option>
-                <option value="ads">Ad Clicks</option>
-                <option value="marketplace">Digital Marketplace</option>
-              </select>
             </div>
 
             {/* Message */}
             <div>
               <label htmlFor="message" className="block text-sm font-semibold text-secondary-700 mb-2">
-                Additional Message (Optional)
+                Message
               </label>
               <textarea
                 id="message"

@@ -5,7 +5,6 @@ import HowItWorks from '../components/sections/HowItWorks';
 import Testimonials from '../components/sections/Testimonials';
 import EnquiryForm from '../components/sections/Enquiryform';
 import YouTubeSection from '../components/sections/YoutubeSection';
-import SuggestedWebsites from '../components/sections/SuggestedWebsites';
 
 const Home: React.FC = () => {
   return (
@@ -15,7 +14,6 @@ const Home: React.FC = () => {
       <HowItWorks />
       <Testimonials />
       <YouTubeSection />
-      <SuggestedWebsites />
       <EnquiryForm />
     </>
   );
