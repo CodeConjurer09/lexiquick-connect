@@ -270,7 +270,7 @@ const Features = () => {
             href="/register" 
             className="inline-block bg-accent-500 text-neutral-50 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-500/50"
           >
-            Register to Start Earning
+            Register
           </a>
         </div>
       </div>

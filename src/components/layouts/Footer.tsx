@@ -7,13 +7,10 @@ const Footer: React.FC = () => {
   const footerLinks = {
     quickLinks: [
       { name: 'About Us', path: '/about' },
-      { name: 'How It Works', path: '/guide' },
-      { name: 'FAQ', path: '/faq' },
     ],
     support: [
-      { name: 'Help Center', path: '/help' },
+      { name: 'Help Center', path: '/contact' },
       { name: 'Contact Us', path: '/contact' },
-      { name: 'Terms of Service', path: '/terms' },
     ],
   };
 
@@ -25,7 +22,7 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">HelaLink</h3>
+            <h3 className="text-xl font-bold text-white mb-4">LexiQuick</h3>
             <p className="text-neutral-400">
               Your gateway to multiple online earning opportunities across Africa.
             </p>
@@ -74,7 +71,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-secondary-800 pt-8 text-center text-neutral-400">
-          <p>&copy; {currentYear} HelaLink Agencies. All rights reserved.</p>
+          <p>&copy; {currentYear} LexiQuick Connect. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -52,10 +52,10 @@ const EnquiryForm: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-secondary-800 mb-4">
-            Get Started Today
+            Need assistance?
           </h2>
           <p className="text-lg text-secondary-500">
-            Fill out the form below and we'll help you start your earning journey
+            Send us your enquiries
           </p>
         </div>
 

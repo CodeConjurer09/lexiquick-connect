@@ -11,17 +11,17 @@ const YouTubeSection = () => {
     {
       id: '1',
       title: 'Getting Started with LexiQuick Connect',
-      videoId: 'dQw4w9WgXcQ'
+      videoId: 'dQw4w9WgXc'
     },
     {
       id: '2',
       title: 'How to Maximize Your Earnings',
-      videoId: 'dQw4w9WgXcQ'
+      videoId: 'dQw4w9WgXc'
     },
     {
       id: '3',
       title: 'Success Stories from Our Users',
-      videoId: 'dQw4w9WgXcQ'
+      videoId: 'dQw4w9WgXc'
     }
   ];
 
