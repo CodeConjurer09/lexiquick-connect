@@ -11,7 +11,7 @@ const ComingSoon: React.FC = () => {
     seconds: 0
   });
 
-  const launchDate = new Date('2026-01-06T00:00:00').getTime();
+  const launchDate = new Date('2026-01-03T00:00:00').getTime();
 
   useEffect(() => {
     const timer = setInterval(() => {
