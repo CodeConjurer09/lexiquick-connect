@@ -94,7 +94,7 @@ const About: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/register"
+              href="https://www.lexiquickconnect.com/sign-up?ref=lexiquick.helpline@gmail.com"
               className="px-8 py-4 bg-accent-500 text-gray-900 font-bold rounded-full hover:bg-accent-600 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-center"
             >
               Start Earning Today
@@ -193,7 +193,7 @@ const About: React.FC = () => {
       <section ref={galleryRef} className="py-20 px-4 sm:px-6 lg:px-8 bg-white fade-in-section">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center">
-            See LexiQuick in Action
+            See LexiQuick in Action 
           </h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 gallery-grid">
@@ -254,7 +254,7 @@ const About: React.FC = () => {
 
           <div className="flex justify-center mt-12">
             <a
-              href="/register"
+              href="https://www.lexiquickconnect.com/sign-up?ref=lexiquick.helpline@gmail.com"
               className="px-12 py-5 bg-accent-500 text-gray-900 font-bold rounded-full hover:bg-accent-600 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl text-xl"
             >
               Get Started Now

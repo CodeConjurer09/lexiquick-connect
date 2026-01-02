@@ -112,7 +112,7 @@ const HowItWorks = () => {
 
         <div className="mt-20 text-center">
           <a
-            href="/register"
+            href="https://www.lexiquickconnect.com/sign-up?ref=lexiquick.helpline@gmail.com"
             className="inline-flex items-center gap-3 bg-accent-500 text-neutral-50 px-10 py-5 rounded-xl font-bold text-lg hover:bg-accent-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent-500/50 group"
           >
             Get Started Now

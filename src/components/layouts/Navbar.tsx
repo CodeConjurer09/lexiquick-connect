@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
                 />
               </a>
             ))}
-            <Button onClick={() => navigate('/guide')}>Get Started</Button>
+            <Button onClick={() => navigate('https://www.lexiquickconnect.com/sign-up?ref=lexiquick.helpline@gmail.com')}>Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -158,7 +158,7 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <Button fullWidth onClick={() => { navigate('/guide'); setMobileMenuOpen(false); }}>
+          <Button fullWidth onClick={() => { navigate('https://www.lexiquickconnect.com/sign-up?ref=lexiquick.helpline@gmail.com'); setMobileMenuOpen(false); }}>
             Get Started
           </Button>
         </div>

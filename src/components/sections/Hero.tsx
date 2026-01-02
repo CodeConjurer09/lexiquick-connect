@@ -89,10 +89,15 @@ const Hero = () => {
           <div className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-500 delay-200 ${
             isAnimating ? 'opacity-0 transform translate-y-4' : 'opacity-100 transform translate-y-0'
           }`}>
-            <button className="group px-8 py-4 bg-accent-500 text-neutral-50 rounded-lg font-semibold hover:bg-accent-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-500/50 flex items-center">
+            <a
+              href="https://www.lexiquickconnect.com/sign-up?ref=lexiquick.helpline@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-accent-500 text-neutral-50 rounded-lg font-semibold hover:bg-accent-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-500/50 flex items-center"
+            >
               {slides[currentSlide].cta}
               <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
