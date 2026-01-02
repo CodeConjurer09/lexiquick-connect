@@ -118,11 +118,11 @@ const ComingSoon: React.FC = () => {
                 </div>
               ) : (
                 <div className="text-center py-4">
-                  <CheckCircle className="w-16 h-16 text-primary-500 mx-auto mb-4 animate-bounce" />
-                  <h3 className="text-xl md:text-2xl font-semibold text-neutral-50 mb-2">
+                  <CheckCircle className="w-16 h-16 text-accent-500 mx-auto mb-4 animate-bounce" />
+                  <h3 className="text-xl md:text-2xl font-semibold text-secondary-500 mb-2">
                     Thank You!
                   </h3>
-                  <p className="text-secondary-100">
+                  <p className="text-accent-500">
                     We'll notify you as soon as we launch.
                   </p>
                 </div>
