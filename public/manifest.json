@@ -1,12 +1,13 @@
 {
-  "name": "LexiQuick - Watch, Review & Get Rewarded",
-  "short_name": "LexiQuick",
-  "description": "Earn money by watching videos, reviewing apps, and watching movies",
+  "name": "LexiQuick Connect - Watch, Review & Get Rewarded",
+  "short_name": "LexiQuick Connect",
+  "description": "LexiQuick Connect - Earn money by watching videos, reviewing apps, and watching movies. Connecting businesses with audiences.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#3B82F6",
+  "theme_color": "#FF3F00",
   "orientation": "portrait-primary",
+  "keywords": "lexiquick connect, lexiquickconnect, earn money online, watch videos for money",
   "icons": [
     {
       "src": "/lexiquick-logo.png",
