@@ -143,7 +143,7 @@ const About: React.FC = () => {
 
             <div className="flex justify-center mt-10">
               <a
-                href="https://chat.whatsapp.com/your-group-link"
+                href="https://chat.whatsapp.com/KBlUM1wL9X8Ak2nEhnczvS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-10 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-full hover:from-green-600 hover:to-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-lg flex items-center gap-2"
