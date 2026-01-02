@@ -20,8 +20,8 @@ const Hero = () => {
     },
     {
       image: 'assets/images/sc6.png',
-      title: 'Discover over 5 Ways to earn',
-      subtitle: '7+ earning methods available',
+      title: 'At Lexiquick every review counts',
+      subtitle: 'Review the latest movies and apps',
       cta: 'Register now'
     }
   ];
@@ -29,7 +29,7 @@ const Hero = () => {
   const stats = [
     { value: 30000, label: "Active Users", suffix: "+" },
     { value: 100, label: "Paid Out", prefix: "$", suffix: "K+" },
-    { value: 7, label: "Earning Methods", suffix: "+" },
+    { value: 2, label: "Ways to Earn", suffix: "+" },
     { value: 26, label: "African Countries", suffix: "" }
   ];
 

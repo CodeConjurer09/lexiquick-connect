@@ -10,7 +10,7 @@ const Features = () => {
       title: "The Shawshank Redemption",
       image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '-2deg'
     },
@@ -19,7 +19,7 @@ const Features = () => {
       title: "Inception",
       image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '3deg'
     },
@@ -28,7 +28,7 @@ const Features = () => {
       title: "The Dark Knight",
       image: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '-3deg'
     },
@@ -37,7 +37,7 @@ const Features = () => {
       title: "Interstellar",
       image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '2deg'
     },
@@ -46,7 +46,7 @@ const Features = () => {
       title: "Pulp Fiction",
       image: "https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '4deg'
     },
@@ -55,7 +55,7 @@ const Features = () => {
       title: "Forrest Gump",
       image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '-4deg'
     },
@@ -64,7 +64,7 @@ const Features = () => {
       title: "The Matrix",
       image: "https://images.unsplash.com/photo-1579566346927-c68383817a25?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '3deg'
     },
@@ -73,7 +73,7 @@ const Features = () => {
       title: "Gladiator",
       image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500&q=80",
       rating: 5,
-      earnings: "$2.50",
+      earnings: "$1.50",
       reviewLink: "#",
       rotate: '-2deg'
     }
@@ -85,7 +85,7 @@ const Features = () => {
       title: "Fitness Pro",
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&q=80",
       rating: 5,
-      earnings: "$1.50",
+      earnings: "$0.50",
       reviewLink: "#",
       rotate: '2deg'
     },
@@ -94,7 +94,7 @@ const Features = () => {
       title: "Photo Editor",
       image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&q=80",
       rating: 5,
-      earnings: "$1.50",
+      earnings: "$0.50",
       reviewLink: "#",
       rotate: '-3deg'
     },
@@ -103,7 +103,7 @@ const Features = () => {
       title: "Music Stream",
       image: "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=500&q=80",
       rating: 5,
-      earnings: "$1.50",
+      earnings: "$0.50",
       reviewLink: "#",
       rotate: '4deg'
     },
@@ -112,7 +112,7 @@ const Features = () => {
       title: "Task Manager",
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=80",
       rating: 5,
-      earnings: "$1.50",
+      earnings: "$0.50",
       reviewLink: "#",
       rotate: '-2deg'
     },
@@ -121,7 +121,7 @@ const Features = () => {
       title: "Budget Planner",
       image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&q=80",
       rating: 5,
-      earnings: "$1.50",
+      earnings: "$0.50",
       reviewLink: "#",
       rotate: '3deg'
     },
@@ -130,7 +130,7 @@ const Features = () => {
       title: "Recipe Book",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&q=80",
       rating: 5,
-      earnings: "$1.50",
+      earnings: "$0.50",
       reviewLink: "#",
       rotate: '-4deg'
     }
