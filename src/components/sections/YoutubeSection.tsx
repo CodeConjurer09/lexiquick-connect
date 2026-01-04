@@ -28,22 +28,22 @@ const YouTubeSection = () => {
   const successfulTransactions = [
     {
       id: 1,
-      src: 'assets/images/sc7.png',
+      src: 'assets/images/wh.jpeg',
       alt: 'Successful transaction preview 1'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+      src: 'assets/images/wh2.jpeg',
       alt: 'Successful transaction preview 2'
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+      src: 'assets/images/wh3.jpeg',
       alt: 'Successful transaction preview 3'
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80',
+      src: 'assets/images/wh4.jpeg',
       alt: 'Successful transaction preview 4'
     }
   ];

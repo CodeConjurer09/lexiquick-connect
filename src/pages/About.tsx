@@ -64,10 +64,10 @@ const About: React.FC = () => {
   ];
 
   const imageGallery = [
-    { id: 1, path: 'assets/images/sc9.png', alt: 'LexiQuick community' },
-    { id: 2, path: 'assets/images/sc6.png', alt: 'Successful earnings' },
-    { id: 3, path: 'assets/images/sc7.png', alt: 'App reviews' },
-    { id: 4, path: 'assets/images/sc8.png', alt: 'Movie watching' }
+    { id: 1, path: 'assets/images/wh.jpeg', alt: 'LexiQuick community' },
+    { id: 2, path: 'assets/images/wh2.jpeg', alt: 'Successful earnings' },
+    { id: 3, path: 'assets/images/wh5.jpeg', alt: 'App reviews' },
+    { id: 4, path: 'assets/images/wh6.jpeg', alt: 'Movie watching' }
   ];
 
   return (
