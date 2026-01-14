@@ -3,18 +3,18 @@ import { UserPlus, CreditCard, Monitor, DollarSign, Wallet, ArrowRight } from 'l
 
 const HowItWorks = () => {
   const [visibleSteps, setVisibleSteps] = useState<number[]>([]);
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef(null);
 
   const steps = [
     {
       icon: <UserPlus className="w-8 h-8" />,
-      title: "Create Your Account",
-      description: "Sign up on our website in seconds with your email and basic information"
+      title: "Create an Account",
+      description: "Sign up using a verified link from our website in seconds with your email and basic information"
     },
     {
       icon: <CreditCard className="w-8 h-8" />,
-      title: "Choose Your Plan",
-      description: "Select a plan that fits your earning goals and activate your account"
+      title: "Choose a Plan",
+      description: "Select a plan to work with. Choose either movies or apps to review or both. Deposit the capital for that plan, once your deposit has been approved, proceed to purchasing the plan"
     },
     {
       icon: <Monitor className="w-8 h-8" />,
@@ -23,13 +23,116 @@ const HowItWorks = () => {
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      title: "Watch & Earn",
-      description: "Review content, give ratings, and watch your earnings grow instantly"
+      title: "Watch and Earn",
+      description: "Review content, submit your ratings and watch your earnings grow instantly"
     },
     {
       icon: <Wallet className="w-8 h-8" />,
       title: "Withdraw Funds",
-      description: "Cash out your earnings anytime via mobile money or bank transfer"
+      description: "Cash out your earnings via mobile money or via your bank"
+    }
+  ];
+
+  const appPlans = [
+    {
+      name: "TRIAL PLAN",
+      price: "Ksh 2,400",
+      features: [
+        "Ksh 4,800 cashback",
+        "Earn daily",
+        "Instant withdrawals",
+        "24 hours customer care"
+      ],
+      note: "The lowest plan with least returns. A starter plan",
+      popular: false
+    },
+    {
+      name: "APPROVAL PLAN",
+      price: "Ksh 6,500",
+      features: [
+        "Approved account",
+        "Instant withdrawals",
+        "Instant cashback",
+        "Ksh 13,500 daily earnings"
+      ],
+      note: "Most preferred plan for starter ups. Good capital return ratio",
+      popular: true
+    },
+    {
+      name: "LEXI AGENT",
+      price: "Ksh 18,000",
+      features: [
+        "Mentorship program",
+        "Weekly bonuses",
+        "Daily pay"
+      ],
+      note: "Most preferred for users who need mentorship programs. Become a Lexi agent and enjoy numerous bonuses",
+      popular: false
+    },
+    {
+      name: "SHAREHOLDER PLAN",
+      price: "Ksh 50,000",
+      features: [
+        "Official group member",
+        "Ksh 100,000 weekly pay",
+        "First priority VVIP member"
+      ],
+      note: "Premium investment tier for serious earners. Double your capital weekly with exclusive VVIP benefits and priority support",
+      popular: false
+    }
+  ];
+
+  const moviePlans = [
+    {
+      name: "BASIC PLAN",
+      price: "Ksh 1,550",
+      features: [
+        "Watch 45 movies",
+        "Watch twice a week",
+        "Earn up to Ksh 4,500 weekly"
+      ],
+      note: "Ideal for absolute beginners. Start small, earn steadily"
+    },
+    {
+      name: "LEXI PLAN",
+      price: "Ksh 3,600",
+      features: [
+        "Access to 70 paid ads",
+        "Manage ads 3 times a week",
+        "Earn up to Ksh 7,000 weekly"
+      ],
+      note: "For users ready to earn more with just a small upgrade. Balanced and worth it"
+    },
+    {
+      name: "PRIME PLAN",
+      price: "Ksh 5,500",
+      features: [
+        "Watch limited movies",
+        "Manage ads 4 times a week",
+        "Earn up to Ksh 11,500 weekly"
+      ],
+      note: "Best starter value! A small investment with bigger weekly returns"
+    },
+    {
+      name: "QUICK PLAN",
+      price: "Ksh 8,000",
+      features: [
+        "Watch movies daily",
+        "Unlimited movies",
+        "Get a Ksh 8,000 cashback"
+      ],
+      note: "Break even immediately with instant cashback! Unlimited access to movies with zero risk and pure profits from day one"
+    },
+    {
+      name: "VERIFIED M PLAN",
+      price: "Ksh 26,000",
+      features: [
+        "Earn daily",
+        "Daily bonuses",
+        "Multiple withdrawal times",
+        "Earn Ksh 30,000 plus"
+      ],
+      note: "Elite movie reviewer status. Maximum flexibility with multiple daily withdrawals and earn above your capital every single week"
     }
   ];
 
@@ -38,10 +141,23 @@ const HowItWorks = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // Animate steps
             steps.forEach((_, index) => {
               setTimeout(() => {
-                setVisibleSteps((prev) => [...new Set([...prev, index])]);
+                setVisibleSteps((prev) => Array.from(new Set([...prev, index])));
               }, index * 200);
+            });
+            // Animate app plans
+            appPlans.forEach((_, index) => {
+              setTimeout(() => {
+                setVisibleSteps((prev) => Array.from(new Set([...prev, index + 5])));
+              }, (index + steps.length) * 150);
+            });
+            // Animate movie plans
+            moviePlans.forEach((_, index) => {
+              setTimeout(() => {
+                setVisibleSteps((prev) => Array.from(new Set([...prev, index + 9])));
+              }, (index + steps.length + appPlans.length) * 150);
             });
           }
         });
@@ -121,6 +237,115 @@ const HowItWorks = () => {
           <p className="mt-4 text-sm text-primary-600">
             Join 30,000+ users already earning
           </p>
+        </div>
+
+        {/* Plans Section */}
+        <div className="mt-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-primary-900 mb-4">
+              Available Plans on Lexiquick
+            </h2>
+            <p className="text-xl text-primary-600 max-w-2xl mx-auto">
+              Choose the plan that matches your earning goals
+            </p>
+          </div>
+
+          {/* App Plans */}
+          <div className="mb-20">
+            <h3 className="text-3xl font-bold text-primary-900 mb-8 text-center">
+              App Plans
+            </h3>
+            <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto">
+              Choose your preferred App plan, access the apps and earn once you review them
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {appPlans.map((plan, index) => (
+                <div
+                  key={index}
+                  className={`relative bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 ${
+                    plan.popular ? 'border-accent-500' : 'border-secondary-100'
+                  } group ${
+                    visibleSteps.includes(index + 5)
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 translate-y-8'
+                  }`}
+                  style={{ transitionDelay: `${index * 150}ms` }}
+                >
+                  {plan.popular && (
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent-500 text-neutral-50 px-4 py-1 rounded-full text-sm font-bold">
+                      Popular
+                    </div>
+                  )}
+                  <div className="text-center mb-6">
+                    <h4 className="text-xl font-bold text-primary-900 mb-2">
+                      {plan.name}
+                    </h4>
+                    <p className="text-3xl font-bold text-accent-500">
+                      {plan.price}
+                    </p>
+                  </div>
+                  <ul className="space-y-3 mb-6">
+                    {plan.features.map((feature, fIndex) => (
+                      <li key={fIndex} className="flex items-start gap-2 text-primary-700">
+                        <ArrowRight className="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {plan.note && (
+                    <p className="text-xs text-primary-600 italic border-t border-secondary-200 pt-4">
+                      {plan.note}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Movie Plans */}
+          <div>
+            <h3 className="text-3xl font-bold text-primary-900 mb-8 text-center">
+              Movie Plans
+            </h3>
+            <p className="text-center text-primary-600 mb-12 max-w-2xl mx-auto">
+              Begin your journey here! Affordable, simple and rewarding - perfect for new members
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {moviePlans.map((plan, index) => (
+                <div
+                  key={index}
+                  className={`relative bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 border-secondary-100 group ${
+                    visibleSteps.includes(index + 9)
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 translate-y-8'
+                  }`}
+                  style={{ transitionDelay: `${index * 150}ms` }}
+                >
+                  <div className="text-center mb-6">
+                    <h4 className="text-xl font-bold text-primary-900 mb-2">
+                      {plan.name}
+                    </h4>
+                    <p className="text-3xl font-bold text-accent-500">
+                      {plan.price}
+                    </p>
+                  </div>
+                  <ul className="space-y-3 mb-6">
+                    {plan.features.map((feature, fIndex) => (
+                      <li key={fIndex} className="flex items-start gap-2 text-primary-700">
+                        <ArrowRight className="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {plan.note && (
+                    <p className="text-xs text-primary-600 italic border-t border-secondary-200 pt-4">
+                      {plan.note}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
