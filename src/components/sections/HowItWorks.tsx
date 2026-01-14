@@ -3,7 +3,17 @@ import { UserPlus, CreditCard, Monitor, DollarSign, Wallet, ArrowRight } from 'l
 
 const HowItWorks = () => {
   const [visibleSteps, setVisibleSteps] = useState<number[]>([]);
+  const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const steps = [
     {
@@ -162,7 +172,7 @@ const HowItWorks = () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1, rootMargin: '0px 0px -10% 0px' }
     );
 
     if (sectionRef.current) {
@@ -195,7 +205,7 @@ const HowItWorks = () => {
               <div
                 key={index}
                 className={`relative transition-all duration-700 ${
-                  visibleSteps.includes(index)
+                  visibleSteps.includes(index) || isMobile
                     ? 'opacity-100 translate-y-0'
                     : 'opacity-0 translate-y-8'
                 }`}
@@ -265,7 +275,7 @@ const HowItWorks = () => {
                   className={`relative bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 ${
                     plan.popular ? 'border-accent-500' : 'border-secondary-100'
                   } group ${
-                    visibleSteps.includes(index + 5)
+                    visibleSteps.includes(index + 5) || isMobile
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-8'
                   }`}
@@ -315,7 +325,7 @@ const HowItWorks = () => {
                 <div
                   key={index}
                   className={`relative bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 border-secondary-100 group ${
-                    visibleSteps.includes(index + 9)
+                    visibleSteps.includes(index + 9) || isMobile
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-8'
                   }`}
