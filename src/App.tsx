@@ -19,7 +19,7 @@ const App: React.FC = () => {
         </main>
         <Footer />
         <FloatingWhatsApp 
-          phoneNumber="254750518501"
+          phoneNumber="254707569122"
           message="Hello! I would like to know more about LexiQuick."
           position="right"
         />
