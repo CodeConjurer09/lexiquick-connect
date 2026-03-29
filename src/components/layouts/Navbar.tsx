@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import { Menu, X, MessageCircle, CheckCircle } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
 interface ButtonProps {
@@ -80,10 +80,24 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed top-0 w-full backdrop-blur-sm border-b border-neutral-200 z-50">
-      <div className="text-center bg-red-500 text-white py-2">
-        <p className="animate-pulse">
-          Watch, review and get rewarded!
-        </p>
+      <div className="bg-red-500 text-white py-2 px-4">
+        <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto flex-wrap">
+          
+          <p className="animate-pulse font-medium text-sm text-center flex-1">
+            Watch, review and get rewarded!
+          </p>
+
+          <div className="h-4 w-px bg-red-300 hidden sm:block" />
+
+          <Link
+            to="/successful-transactions"
+            className="flex items-center gap-1.5 text-sm font-medium text-red-100 hover:text-white hover:underline transition-colors duration-200 whitespace-nowrap"
+          >
+            <CheckCircle className="w-4 h-4 flex-shrink-0" />
+            View successful transactions
+          </Link>
+
+        </div>
       </div>
       <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-neutral-50">
         <div className="flex justify-between items-center h-20">

@@ -5,6 +5,7 @@ import Footer from './components/layouts/Footer';
 import FloatingWhatsApp from './components/sections/FloatingButton';
 import Home from './pages/Home';
 import About from './pages/About';
+import ProofPage from './pages/ProofPage';
 
 const App: React.FC = () => {
   return (
@@ -15,11 +16,12 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/successful-transactions" element={<ProofPage />} />
           </Routes>
         </main>
         <Footer />
         <FloatingWhatsApp 
-          phoneNumber="254707569122"
+          phoneNumber="254778338989"
           message="Hello! I would like to know more about LexiQuick."
           position="right"
         />
