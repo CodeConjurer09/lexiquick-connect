@@ -82,6 +82,8 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 w-full backdrop-blur-sm border-b border-neutral-200 z-50">
       <div className="bg-red-500 text-white py-2 px-4">
         <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto flex-wrap">
+
+          <p>Call/WhatsApp +254707569122 for a quick customer care support</p>
           
           <p className="animate-pulse font-medium text-sm text-center flex-1">
             Watch, review and get rewarded!
